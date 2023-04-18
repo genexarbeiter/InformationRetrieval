@@ -1,0 +1,28 @@
+<topics>
+    <topic number="1">
+        <title>How does Information Retrieval work?</title>
+        <description>Find out how Information Retrieval works</description>
+        <narrative>Relevant papers are those that describe the Information Retrieval process in a general way
+        </narrative>
+    </topic>
+    <topic number="2">
+        <title>Information Retrieval Invention</title>
+        <description>
+            Find out how and when the concept of Information Retrieval was invented
+        </description>
+        <narrative>
+            Relevant papers are those that describe the history of Information Retrieval. The user is not interested in
+            general Information Retrieval documents.
+        </narrative>
+    </topic>
+    <topic number="3">
+        <title>information retrieval performance comparison</title>
+        <description>
+            How to compare the performance of Information Retrieval systems? Which methods are used? What are the
+            metrics?
+        </description>
+        <narrative>
+            Relevant papers are those that describe the methods used to compare the performance of Information Retrieval
+        </narrative>
+    </topic>
+</topics>
