@@ -13,19 +13,8 @@ class IrDocument(NamedTuple):
         return self.text
 
 
-class Streamer:
-    def __int__(self):
-        pass
+ir_datasets.registry.register('iranthology-ArMaFiRa', Dataset(
+    JsonlDocs(ir_datasets.util.PackageDataFile(path='datasets_in_progress/ir_documents.jsonl'), doc_cls=IrDocument, lang='en'),
+    TrecXmlQueries(ir_datasets.util.PackageDataFile(path='datasets_in_progress/ir_topics.xml'), lang='en')
+))
 
-    def path(self, force: bool):
-        return ''
-
-
-ir_datasets.registry.register('iranthology-ArMaFiRa',
-                              Dataset(JsonlDocs(
-                                  ir_datasets.util.fileio.RelativePath(streamer=Streamer(),
-                                                                       path='/usr/lib/python3.8/site-packages/ir_datasets/datasets_in_progress/ir_documents.jsonl'),
-                                  doc_cls=IrDocument, lang='en'),
-                                  TrecXmlQueries(ir_datasets.util.fileio.RelativePath(streamer=Streamer(),
-                                                                                      path='/usr/lib/python3.8/site-packages/ir_datasets/datasets_in_progress/ir_topics.xml'),
-                                                 lang='en')))
