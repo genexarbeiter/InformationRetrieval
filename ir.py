@@ -13,7 +13,7 @@ class IrDocument(NamedTuple):
         return self.text
 
 
-ir_datasets.registry.register('iranthology-ArMaFiRa', Dataset(
+ir_datasets.registry.register('iranthology-armafira', Dataset(
     JsonlDocs(ir_datasets.util.PackageDataFile(path='datasets_in_progress/ir_documents.jsonl'), doc_cls=IrDocument, lang='en'),
     TrecXmlQueries(ir_datasets.util.PackageDataFile(path='datasets_in_progress/ir_topics.xml'), lang='en')
 ))
